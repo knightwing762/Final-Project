@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id='score'>000000</div>
+    <div id='game'>
+        <div id='bird'><img src='images/bird.png'></div>
+        <div id='pipe_field'>
+            <div class='pipe top'></div>
+            <div class='pipe bottom'></div>
+        </div>
+    </div>
+    <a id="controls">
+       Space: Jump<br />
+       Enter: Start/Pause
+    </a>
+    <audio id="bgm" src="audio/bmg.mp3" loop autoplay></audio>
+    <button id="mute_button" onclick="mute()">Mute</button>
+</body>
+<script src="game.js"></script>
+</html>

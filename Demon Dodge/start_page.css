@@ -1,0 +1,33 @@
+body {
+    background-image: url("images/background.png");
+    background-size: cover;
+}
+
+@keyframes glowing {
+    0%{
+        background-color: #2bb123;
+        box-shadow: 0 0 3px #2bb123;
+    }
+    50%{
+        background-color: #a231a2;
+        box-shadow: 0 0 3px #a231a2;   
+    }
+    100%{
+        background-color: #2bb123;
+        box-shadow: 0 0 3px #2bb123;
+    }
+}
+
+button{
+    padding:0;
+    position: absolute;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 50px;
+    height: 75px;
+    width: 15%;
+    top:45%;
+    left:45%;
+    animation: glowing 2000ms infinite;
+}
